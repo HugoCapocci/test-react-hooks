@@ -1,24 +1,16 @@
 import React from 'react';
 import './App.css';
 
+import { SwFilm } from './SwFilm';
+import Logo from './sw-logo.svg';
+
 function App() {
-
-  const [countCall, setCountCall] = React.useState(0);
-
-  const incrementCountCall = () => {
-    setCountCall(previousCountCall => previousCountCall + 1);
-  };
-
   return (
-    <div className="App">
-      <div>
-        Nombre d'appels : {countCall}
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src={Logo} alt="sw logo"/>
       </div>
-      <div>
-        <button onClick={incrementCountCall}>
-          OK
-        </button>
-      </div>
+      <SwFilm id={1}/>
     </div>
   );
 }
