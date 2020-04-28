@@ -49,3 +49,10 @@ body {
         top: -170%;
     }
 }
+
+.error {
+  display: flex;
+  color: crimson;
+  justify-content: center;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
