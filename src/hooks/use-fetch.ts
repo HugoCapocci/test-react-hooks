@@ -10,6 +10,7 @@ export const useFetch = (url: string) => {
             setLoading(true);
             try {
                 const response = await fetch(url);
+                
                 if (response.status === 404) throw new Error('not found');
                 const result = await response.json();
                 setResult(result);
@@ -27,6 +28,5 @@ export const useFetch = (url: string) => {
         loading,
         error,
         result
-    }
-
+    };
 }
